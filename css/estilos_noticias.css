@@ -1,0 +1,732 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: #076d00;
+    color: #999;
+    font-family: Akkurat,Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+
+.contenedor{
+    width: 100%;
+    margin: auto;
+}
+
+
+
+/*CABECERA*/
+
+
+header{
+    background: #000;
+    width: 100%;
+    opacity: .9999999;
+}
+
+header h1{
+    font-size: 30px;
+    line-height: 100px;
+    font-family: "Forvertz";
+    text-align: center;
+}
+
+header h1 a{
+    text-decoration: none;
+    font-family: "Forvertz";
+    color: 	#2eb745;
+    line-height: 100px;
+    font-size: 30px;
+    font-style: normal;
+}
+
+header h1 a:hover{
+    text-decoration: none;
+    color: #2eb745;
+}
+
+/*NOTICIAS*/
+
+.section1{
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    background: #f8f9fa;
+}
+
+.news_box{
+    float: left;
+    display: block;
+    margin-left: 2%;
+    width: 40%;
+    position: relative;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 2px solid #faa61a;
+}
+
+/**Hover cambios*/
+.news_box :hover{
+    background: #000;
+}
+
+.news_box :hover a{
+    color: #fff;
+    font-size: 1.0375rem;
+}
+/*Fin Hover*/
+
+.image-box{
+    padding: 50px 40px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #000; 
+}
+
+.content-box{
+    padding: 50px 40px;
+    position: relative;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-box h3{
+    font-family: Akkurat,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #faa61a;
+    font-size: 1rem;
+    text-align: center;
+    line-height: 30px;
+    display: block;
+}
+
+.content-box a{
+    text-decoration: none;
+    font-size: .9375rem;
+    color: #11171a;
+    transition: .15s;
+    background-color: transparent;
+    cursor: pointer;
+}
+/*FIN*/
+
+
+
+/*NAV*/
+
+
+
+/*MENU*/
+
+nav{
+        top:-20px;
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: 20px auto;
+        margin-bottom: 20px;
+        width: 100%;    
+        cursor: pointer;
+        font-family: "Din Pro";
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav > ul {
+    display: table;
+    width: 100%;
+    background: #11171a;
+    position: relative;
+    border-top: 2px solid #faa61a;
+    border-bottom: 2px solid #faa61a;
+}
+
+nav > ul li {
+    display: table-cell;
+}
+
+
+    /*Función CSS3 Generator para animación*/
+
+nav > ul li a {
+    color: #fff;
+    display: block;
+    line-height: 15px;
+    padding: 20px;
+    position: relative;
+    font-size: .75rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    opacity: 0.95;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav > ul > li > ul > li a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #faa61a;
+    font-size: .90rem;
+    opacity: 1; 
+}
+
+
+    /*Modificación del desplegable de los iconos*/
+
+nav > ul > li > a span {
+    background: #faa61a;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -55px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul > li > a span .icon {
+    display: block;
+    line-height: 60px;
+
+}
+
+nav > ul > li > a:hover > span {
+    top: 0;
+}
+
+
+    /*Submenu desplegable categorías*/
+    /*Hacemos que al pasar el ratón aparezca el menú en bloque*/
+nav > ul > li:hover > ul {
+    display: block;
+    border-bottom: 4px solid #faa61a;
+    height:100%;
+}
+
+    /*Corregir un error que hacía que se expandiera más, hacer que el submenu aparezca 
+    desde la izquierda hasta el máximo de la derecha y ponerle una animación*/
+nav > ul > li > ul {
+    display: block;
+    position: absolute;
+    background: #1a2226;
+    left: 0;
+    right: 0; /*Si se quiere expandir hasta el final*/
+    overflow: hidden;
+    height: 0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;   
+}
+
+
+    /*Colores menú*/
+
+nav ul li a .color_azul1{
+    background: #11171a;
+}
+nav ul li a .color_cyan{
+    background: #1a2226;
+}
+nav ul li a .color_naranja{
+    background: #11171a;
+}
+nav ul li a .color_azul2{
+    background: #11171a;
+}
+nav ul li a .color_azul3{
+    background: #11171a;
+}
+
+
+
+/*Fin menú navegación*/
+
+.navbar{
+    margin-top: 10px;
+    z-index: 100;
+    padding: 20px;
+    background: #000 !important;
+}
+
+.navbar{
+    padding: 0;
+}
+.nav-item{
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fff !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #faa61a;
+}
+
+
+/*Icono*/
+.hamburguesa{
+    max-width:40px;
+    max-height:40px;
+}
+
+
+.dropdown-item{
+    padding: 20px;
+    color: #fff;
+}
+
+.dropdown-item:hover{
+    background: #0e982d;
+    color: #fff;
+    font-weight: bolder;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.nav-link{
+    padding: 15px !important;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: #faa61a;
+
+    padding: 15px !important;
+} 
+
+.dropdown-menu{
+    background: #1a2226;
+    margin:0 !important;
+    padding: 0;
+    border-radius: 0;
+}
+
+@media screen and (min-width: 992px){
+.navbar-nav{
+    width: 100%;
+    display: table;
+}
+.nav-item{
+    display: table-cell;
+    text-align: center;
+    width: 16.66%;
+}   
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    position: absolute;
+    width: 100%;
+}
+.dropdown-item{
+    display: inline !important;
+}
+.dropdown{
+    position: static !important;
+}
+.dropdown-menu{
+    padding: 16px 0;
+    border-bottom: 4px solid #2eb745;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}
+
+} 
+
+
+/*Fin NAV*/
+
+
+
+
+
+/*LISTADO NOTICIAS*/
+
+.section2{
+    padding: 70px 0 0;
+    color: #000000;
+    font-size: 14px;
+    min-height: 500px;
+    width: 100%;
+    background:#e2e3e4;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    float: left;
+}
+
+.col-xs-12{
+    width: 100%;
+    margin-top: 50px;
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.col-xs-12 h4{
+    border-bottom: 1px solid #333a43;
+    margin-bottom: 30px;
+    font-family: bitter,serif;
+    color:#000;
+    font-size: 18px!important;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding-bottom: 15px;
+    margin: 0;
+    line-height: 1.1;
+}
+
+.listado_noticias{
+    margin: 0!important;
+    clear: both;
+    padding-left: 0;
+    list-style: none;
+    box-sizing: border-box;
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 40px;
+}
+
+
+.col-md-4 .col-sm-6 .col-lg-3{
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.noticia{
+    margin-bottom: 60px;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.noticia2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.noticia2 > div{
+    padding: 0;
+}
+
+.foto{
+    position: relative;
+    display: block;
+    text-align: -webkit-match-parent;
+}
+
+.foto a{
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+}
+
+time{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #356924;
+    color: #f8f9fa;
+    padding: 7px 16px;
+    font-size: 12px;
+    border: 1px solid #000;
+    
+}
+
+.img-responsive{
+    height: auto;
+    display: block;
+    max-width: 100%;
+    vertical-align: middle;
+    border: 0;
+    float: left;
+    border: 1px solid #e2e3e4;
+}
+
+article{
+    background: #f8f9fa;
+    padding: 0;
+    display: block;
+    border: 1px solid #e2e3e4;
+}
+
+article h1{
+    font-family: bitter;
+    text-decoration: none;
+    line-height: 23px!important;
+    text-transform: none;
+    margin-top: 18px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+    font-size: 20px!important;
+}
+
+article h1 a{
+    text-decoration: none;
+    color: #020202;
+}
+
+article h1 a:hover{
+    text-decoration: none;
+    color: #020202;
+}
+
+article p{
+    margin-left: 10px;
+}
+
+.read_more{
+    position: absolute;
+    bottom: 0;
+    display: inline-block;
+    margin-left: 10px;
+    padding-bottom: 10px;
+}
+
+.read_more a{
+    color:#208014;
+}
+
+.read_more a:hover{
+    text-decoration: none;
+    color: #faa61a;
+}
+
+.icon{
+    display: inline-block;
+    float: left;
+}
+
+article .h6{
+    font-style: italic;
+    color: #faa61a;
+    opacity: 0.5;
+    float: right;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+
+/*FIN LISTADO NOTICIAS*/
+
+
+
+/*FOOTER*/
+
+
+footer{
+    border-top: 4px solid #28a745;
+    clear: both;
+    background: #11171a;
+}
+
+footer h2{
+    width:175px;
+    margin-top: 50px;
+    margin-left: 70px;
+    border-bottom: 2.5px solid #fa9802; 
+    border-bottom-left-radius: 10px 12px; 
+}
+
+footer > a{
+    text-decoration: none;
+    color: #faa61a;
+    font-family: "Forvertz";
+}
+
+
+/*Primer div*/
+
+.footer_primero {
+    border-top: 1px solid #1a2328;
+}
+
+
+.footer_primero ul {
+    list-style: none;
+}
+
+.footer_primero h3{
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+.footer_columna1, .footer_columna2, .footer_columna3, .footer_columna4{
+    display: table-cell;
+    padding-left: 10%; /*Cambiar el padding con @media para responsive*/
+
+}
+
+.footer_columna1 ul li a, .footer_columna2 ul li a, .footer_columna3 ul li a, .footer_columna4 ul li a{
+    line-height: 22px;
+    display: block;
+    position: relative;
+    color: #939393;
+    text-decoration: none;
+} 
+
+
+/*Separador footers*/
+
+footer hr {
+    text-align: center;
+    margin-left: 5%;
+    width: 90%;
+    height: 1px;
+    opacity: .1;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: #2eb745;
+} 
+
+
+/*Segundo div*/
+
+.footer_segundo{
+    width: 50%;
+    margin-left: 23%;
+    margin-top: 70px;
+    font-size: 11px;
+    height: 100px;
+    text-transform: uppercase;
+}
+
+.columna_izq{
+    width: 50%;
+    float: left;
+}
+
+.columna_izq p{
+    font-weight: 400;
+    line-height: 22px;
+    color: #fff;
+    font-size: .75rem;    
+    opacity: .5;
+}
+
+.columna_der{
+    text-align: right;
+    line-height: 25px;
+}
+
+.ul_columna_der{
+    list-style: none;
+    padding-left: 0;
+}
+
+.ul_columna_der a{
+    text-decoration: none;
+    color: #fff;
+    font-size: .75rem;
+    opacity: .5;
+}
+
+/*FIN FOOTER*/
+
+@media only screen and (max-width: 1065px){
+
+    article > h1 > a{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1; 
+        line-height: 16px;       
+        max-height: 16px;   
+    }
+
+    .noticia2 > article > p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2; 
+        line-height: 16px;       
+        max-height: 32px;   
+    }
+}
+
+
+@media only screen and (min-width: 1625px){
+    article > h1 > a{
+        font-size: 32px;   
+    }
+
+    .noticia2 > article > p{
+        margin-top: 15px;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 1470px){
+    
+    article > h1 > a{
+        font-size: 25px;   
+    }
+
+    .noticia2 > article > p{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1157px){
+        .noticia2 > article > h6 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .noticia2 > article > h6 {
+        position: relative !important;
+    }
+}

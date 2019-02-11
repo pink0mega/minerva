@@ -1,0 +1,569 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    overflow: hidden;
+}
+
+body{
+    background: #f4f5f6;
+    color: #11171a;
+    margin: 0;
+    padding: 0;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-family: "Luna";
+}
+
+
+/*CABECERA*/
+
+header{
+    background: #000;
+    width: 100%;
+    opacity: .9999999;
+}
+
+header h1{
+    margin-bottom: 0 !important;
+    text-align: center;
+}
+
+header h1 a{
+    text-decoration: none;
+    font-family: "Forvertz";
+    color: #faa61a;
+    line-height: 100px;
+    font-size: 30px;
+    font-style: normal;
+}
+header h1 a:hover{
+    text-decoration: none;
+    color: #faa61a;
+}
+
+
+
+/*NAV*/
+
+
+
+/*MENU*/
+
+nav{
+        position: relative;
+        left: 0;
+        right: 0;
+        margin: 20px auto;
+        margin-bottom: 20px;
+        width: 100%;    
+        cursor: pointer;
+        font-family: "Din Pro";
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav > ul {
+    display: table;
+    width: 100%;
+    background: #11171a;
+    position: relative;
+    border-top: 2px solid #faa61a;
+    border-bottom: 2px solid #faa61a;
+}
+
+nav > ul li {
+    display: table-cell;
+}
+
+
+    /*Función CSS3 Generator para animación*/
+
+nav > ul li a {
+    color: #fff;
+    display: block;
+    line-height: 15px;
+    padding: 20px;
+    position: relative;
+    font-size: .75rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    opacity: 0.95;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav > ul > li > ul > li a:hover{
+    text-decoration: none;
+    color: #fff;
+    background: #faa61a;
+    font-size: .90rem;
+    opacity: 1; 
+}
+
+
+    /*Modificación del desplegable de los iconos*/
+
+nav > ul > li > a span {
+    background: #faa61a;
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -55px;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+
+nav > ul > li > a span .icon {
+    display: block;
+    line-height: 60px;
+
+}
+
+nav > ul > li > a:hover > span {
+    top: 0;
+}
+
+
+    /*Submenu desplegable categorías*/
+    /*Hacemos que al pasar el ratón aparezca el menú en bloque*/
+nav > ul > li:hover > ul {
+    display: block;
+    border-bottom: 4px solid #faa61a;
+    height:100%;
+}
+
+    /*Corregir un error que hacía que se expandiera más, hacer que el submenu aparezca 
+    desde la izquierda hasta el máximo de la derecha y ponerle una animación*/
+nav > ul > li > ul {
+    display: block;
+    position: absolute;
+    background: #1a2226;
+    left: 0;
+    right: 0; /*Si se quiere expandir hasta el final*/
+    overflow: hidden;
+    height: 0%;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;   
+}
+
+
+    /*Colores menú*/
+
+nav ul li a .color_azul1{
+    background: #11171a;
+}
+nav ul li a .color_cyan{
+    background: #1a2226;
+}
+nav ul li a .color_naranja{
+    background: #11171a;
+}
+nav ul li a .color_azul2{
+    background: #11171a;
+}
+nav ul li a .color_azul3{
+    background: #11171a;
+}
+
+
+
+/*Fin menú navegación*/
+
+.navbar{
+    margin-bottom: 0px;
+    margin-top: 0px;
+    z-index: 100;
+    padding: 20px;
+    border-top: 4px solid #faa61a;
+    border-bottom: 4px solid #faa61a;
+    background: #000 !important;
+}
+
+.navbar{
+    padding: 0;
+}
+.nav-item{
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link{
+    color: #fff !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #faa61a;
+}
+
+
+/*Icono*/
+.hamburguesa{
+    max-width:40px;
+    max-height:40px;
+}
+
+
+.dropdown-item{
+    padding: 20px;
+    color: #fff;
+}
+
+.dropdown-item:hover{
+    background: #faa61a;
+    color: #fff;
+    font-weight: bolder;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.nav-link{
+    padding: 15px !important;
+}
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link{
+    color: #faa61a;
+
+    padding: 15px !important;
+} 
+
+.dropdown-menu{
+    background: #1a2226;
+    margin:0 !important;
+    padding: 0;
+    border-radius: 0;
+}
+
+@media screen and (min-width: 992px){
+.navbar-nav{
+    width: 100%;
+    display: table;
+}
+.nav-item{
+    display: table-cell;
+    text-align: center;
+    width: 16.66%;
+}   
+.navbar-expand-lg .navbar-nav .dropdown-menu{
+    position: absolute;
+    width: 100%;
+}
+.dropdown-item{
+    display: inline !important;
+}
+.dropdown{
+    position: static !important;
+}
+.dropdown-menu{
+    padding: 16px 0;
+    border-bottom: 4px solid #faa61a;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff !important;
+}
+
+} 
+
+
+/*Fin NAV*/
+
+
+
+
+
+/*NOSOTROS*/
+
+
+.container_fluid{
+    width: 100%;
+    background: #f4f5f6;
+    color: #11171a;
+}
+
+
+/*Sección 1*/
+
+.about_section1{
+    height: 580px;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 0px;
+    position: relative;
+    z-index: 10;
+        background-color: #1a2226;
+}
+
+strong {
+    color: #faa61a;
+}
+
+.about_section1 .section1_linea1{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    opacity: .3;
+    z-index: 10;
+    transition: opacity .3s cubic-bezier(.455,.03,.515,.955);
+
+}
+
+.section1_linea2{
+    width: 100%;
+    margin-top: 5%;
+    position: relative;
+    text-align: center;
+    display: block;
+    color: #fff;
+}
+
+.section1_linea2 h4{
+    color: #fff;
+    font-family: Din Pro,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: .75rem;
+    text-transform: uppercase;
+    line-height: 25px;
+    text-align: center;
+}
+
+.section1_linea2 h2{
+    display: inline-block;
+    font-size: 2.5rem;
+    line-height: 1;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.section1_linea3 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    max-width: none;
+    vertical-align: baseline;
+}
+
+video{
+    object-fit: contain;
+}
+
+.truco{
+    margin-top: 30px;
+}
+
+/*Sección 2*/
+
+.about_section2{
+    font-family: Akkurat,Helvetica Neue,Helvetica,Arial,sans-serif;
+    color: #11171a;
+    padding: 70px 55px;
+
+}
+
+.section2_linea1{
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2.125rem;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    padding-left: 10px;
+    border-left: 8px solid #faa61a;
+}
+
+
+.section2_linea1_2 h2{
+    font-weight: 100;
+    font-style: normal;
+    font-size: 2.125rem;
+    margin-top: 180px;
+    margin-bottom: 30px;
+    line-height: 1.2;
+    padding-left: 10px;
+    border-left: 8px solid #faa61a;
+}
+
+
+
+.section2_linea1 p{
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.about_objetivos ul{
+    padding-left: 40px;
+    margin-top: 10px;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+.section2_linea1 .fans{
+    margin-top: 30px;
+    width: 100%;
+    height: 420px;
+    background-position: 50%;
+    background-size: cover;
+}
+
+
+
+/*FOOTER*/
+
+
+footer{
+    border-top: 4px solid #faa61a;
+    clear: both;
+    background: #11171a;
+}
+
+footer h2{
+    width:135px;
+    margin-top: 50px;
+    margin-left: 70px;
+    border-bottom: 2.5px solid #fa9802; 
+    border-bottom-left-radius: 10px 12px; 
+}
+
+footer > a{
+    text-decoration: none;
+    color: #faa61a;
+    font-family: "Forvertz";
+}
+
+
+/*Primer div*/
+
+.footer_primero {
+    width: 63%;
+    margin-left: 17%;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    font-size: 11px;
+    height: 150px;
+    display: table; 
+}
+
+
+.footer_primero ul {
+    list-style: none;
+}
+
+.footer_primero h3{
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: .75rem;
+}
+
+.footer_columna1, .footer_columna2, .footer_columna3, .footer_columna4{
+    display: table-cell;
+    padding-left: 10%; /*Cambiar el padding con @media para responsive*/
+
+}
+
+.footer_columna1 ul li a, .footer_columna2 ul li a, .footer_columna3 ul li a, .footer_columna4 ul li a{
+    line-height: 22px;
+    display: block;
+    position: relative;
+    color: #939393;
+    text-decoration: none;
+} 
+
+
+/*Separador footers*/
+
+footer hr {
+    text-align: center;
+    margin-left: 5%;
+    width: 90%;
+    height: 1px;
+    opacity: .1;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+footer p{
+    color: #faa61a;
+}
+
+/*Segundo div*/
+
+.footer_segundo{
+    width: 50%;
+    margin-left: 23%;
+    margin-top: 70px;
+    font-size: 11px;
+    height: 100px;
+    text-transform: uppercase;
+}
+
+.columna_izq{
+    width: 50%;
+    float: left;
+}
+
+.columna_izq p{
+    font-weight: 400;
+    line-height: 22px;
+    color: #fff;
+    font-size: .75rem;    
+    opacity: .5;
+}
+
+.columna_der{
+    text-align: right;
+    line-height: 25px;
+}
+
+.ul_columna_der{
+    list-style: none;
+    padding-left: 0;
+}
+
+.ul_columna_der a{
+    text-decoration: none;
+    color: #fff;
+    font-size: .75rem;
+    opacity: .5;
+}
+
+/*FIN FOOTER*/

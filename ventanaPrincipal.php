@@ -22,7 +22,7 @@
 
             <h1>
                 <div align="left"><img src="imagenes/Minerva.png"></img>
-                    <a href="noticias.html">Minerva</a></h1>
+                    <a href="noticias.php">Minerva</a></h1>
         </div>
     </header>
 
@@ -42,9 +42,9 @@
                         Categorias
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="ClasesMusica.html">Musica</a>
-                        <a class="dropdown-item" href="ClasesMatematicas.html">Matematicas</a>
-                        <a class="dropdown-item" href="clasesIngles.html">Idiomas</a>
+                        <a class="dropdown-item" href="ClasesMusica.php">Musica</a>
+                        <a class="dropdown-item" href="ClasesMatematicas.php">Matematicas</a>
+                        <a class="dropdown-item" href="ClasesIngles.php">Idiomas</a>
 
                     </div>
 
@@ -52,7 +52,7 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link" href="footer_contact.html">Contacto</a>
+                    <a class="nav-link" href="footer_privacy.php">Contacto</a>
                 </li>
 
             </ul>
@@ -236,10 +236,10 @@
             <div class="col-md-6" >
                 <ul class="ul_columna_der">
                     <li>
-                        <a href="footer_privacy.html">Política de Privacidad</a>
+                        <a href="footer_privacy.php">Política de Privacidad</a>
                     </li>
                     <li>
-                        <a href="footer_terms.html">Términos &amp; Condiciones</a>
+                        <a href="footer_terms.php">Términos &amp; Condiciones</a>
                     </li>
                 </ul>
             </div>

@@ -23,7 +23,9 @@
             <h1>
                 <div align="left"><img src="imagenes/Minerva.png"></img>
                     <a href="noticias.php">Minerva</a></h1>
+            <div align="right">Usuario</div>
         </div>
+                
     </header>
 
 

@@ -2,6 +2,7 @@
 <html>
 
     <head>
+
         <meta charset="utf-8" /> 
         <title>Clases Particulares</title>
         <link rel="shortcut icon" href="imagenes/minerva.png">
@@ -15,20 +16,16 @@
 
     </head>
 
-
     <body>
 
         <header id="top">
 
             <h1>
-                <div align="left"><img src="imagenes/Minerva.png"></img>
-                    <a href="noticias.php">Minerva</a></h1>
-            <div align="right">Usuario</div>
-        </div>
-                
+
+                <div  align="left"><img src="imagenes/Minerva.png"></img>
+                    <a href="noticias.php">Minerva</a></h1></div>
+
     </header>
-
-
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
 
@@ -56,6 +53,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="footer_privacy.php">Contacto</a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" floattext="left">
+                        Registrarse
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="inicioSesion.php"float="left">Iniciar Sesión</a>
+                        <a class="dropdown-item" href="">TEST</a>
+                    </div>
+
+                </li>
 
             </ul>
         </div>
@@ -68,10 +75,6 @@
             <h4> Clases De Enseñanza y apoyo </h4>
         </div>
     </section>
-
-
-
-
     <section class="section2">
 
         <!-- MUSICA -->
